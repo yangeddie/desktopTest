@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family: Roboto Slab;
+}
+html{
+    background-color: white;
+}
+body{
+    position: relative;
+    width: 1280px;
+    height: 800px;
+    background: -webkit-linear-gradient(#525252,#001F1D);
+}
+
+
+.component{
+    position: absolute;
+    overflow: visible;
+    left: 278.85px;
+    top: 218.67px;
+}
+
+aside{
+    background:#001F1D; 
+    position: absolute;
+    right:0px;
+    top: 0px;
+    width: 105px;
+    height: 100%;
+}
+#new{
+    background-image:url(image/new.svg);
+    width: 60px;
+    height: 82.911px;
+    background-color: transparent;
+    position: absolute;
+    left: 23px;
+    top: 120px;
+}
+#restart{
+    background-image:url(image/restart.svg);
+    width: 88px;
+    height: 70px;
+    background-color: transparent;
+    position: absolute;
+    top: 252px;
+    left: 9px;
+}
+#undo{
+    background-image:url(image/undo.svg);
+    width: 59px;
+    height: 69px;
+    background-color: transparent;
+    position: absolute;
+    top: 371px;
+    left: 23px;
+}
+logo{
+    position: absolute;
+    overflow: visible;
+    left: 50px;
+    top: 0px;
+}
+.information{
+    position: absolute;
+    left: 764px;
+    color: white;
+    font-size: 30px;
+
+}
+#timer,#step{
+    position: absolute;
+    color: inherit;
+    font-size: inherit;
+    width: 150px;
+    top:60px
+}
+#timer{
+    left: 0px;
+}
+#step{
+    left: 120px;
+}
+#timer:before{
+    position: absolute;
+    left: -30px;
+    content: url(image/baseline-access_time-24px.svg);
+}
+.placeCard{
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    width: 1000px;
+    height: 500px;
+}
+.blankCard,.ACard{
+    box-sizing: content-box;
+    width: 110px;
+    height: 158px;
+    background-color: transparent;
+    border: white solid 1px;
+    border-radius: 5px;
+    position: absolute;
+}
+.blankCard:after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 148px;
+    border: white solid 1px;
+    border-radius: 5px;
+    left: 5px;
+    top: 5px;
+}
+.ACard:after{
+    content: "A";
+    font-weight: bold;
+    font-size: 75px;
+    color:lightgray;
+    height: 99px;
+    width: 54px;
+    line-height: 99px;
+    position: absolute;
+    top: 25px;
+    left: 28px;   
+}
+.cardOrigin{
+    position: absolute;
+    top: 145px;
+    width: 110px;
+    height: 158px;
+}
+.card{
+    border: 0px;
+    position: relative;
+    top: 50px;
+    width: 110px;
+    height: 158px;
+    z-index: 1;
+}
